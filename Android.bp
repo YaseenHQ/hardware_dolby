@@ -15,6 +15,22 @@
 soong_namespace {
 }
 
+prebuilt_etc_xml {
+    name: "vendor.dolby.hardware.dms@2.0-service.xml",
+    src: "configs/vintf/vendor.dolby.hardware.dms@2.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.dolby.media.c2@1.0-service.xml",
+    src: "configs/vintf/vendor.dolby.media.c2@1.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libcodec2_soft_ddpdec",
 	owner: "xiaomi",
